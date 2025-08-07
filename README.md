@@ -68,10 +68,6 @@ You need to [enable the Routes API](https://developers.google.com/maps/documenta
 - `@mastra/libsql`: Database storage for telemetry and evals
 - `@mastra/loggers`: Structured logging with Pino
 
-### AI Integration
-- `@ai-sdk/openai`: OpenAI model integration (GPT-4o-mini, o4-mini)
-- `zod`: Schema validation for type-safe operations
-
 ## Project Structure
 
 ```
@@ -80,10 +76,10 @@ src/mastra/
 │   ├── directions-agent.ts    # Wikipedia-powered directions
 │   └── old-fella-agent.ts     # Personality-driven guidance
 ├── tools/
-│   ├── directions-tool.ts     # Bridge between agents
+│   ├── directions-tool.ts     # Agent-as-tool
 │   └── wikipedia/             # Wikipedia integration tools
 ├── scorers/
-│   ├── mapsPerformance/       # Google Maps validation
+│   ├── mapsPerformance/       # Google Maps performance validation
 │   └── toolHallucination/     # Knowledge verification
 └── index.ts                   # Mastra configuration
 ```
